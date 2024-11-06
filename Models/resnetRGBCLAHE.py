@@ -11,10 +11,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from torchmetrics.functional import confusion_matrix
 
-
-
-
-
 # Set seed.
 seed = 42
 torch.manual_seed(seed)

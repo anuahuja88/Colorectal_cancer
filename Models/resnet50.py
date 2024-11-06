@@ -11,10 +11,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from torchmetrics.functional import confusion_matrix
 
-
-
-
-
 # Set seed.
 seed = 42
 torch.manual_seed(seed)
@@ -25,7 +21,7 @@ torch.backends.cudnn.benchmark = True
 # Learning and training parameters.
 epochs = 18
 batch_size = 32
-learning_rate = 0.001
+learning_rate = 0.01
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 # Model

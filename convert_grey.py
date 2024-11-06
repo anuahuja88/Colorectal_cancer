@@ -18,6 +18,9 @@ def convert_to_grayscale(input_dir, output_dir):
             # Convert to grayscale
             gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
+            cv2.imshow("grey", gray_image)
+            cv2.waitKey(0)
+
             # Save the grayscale image
             output_path = os.path.join(output_dir, filename)
             cv2.imwrite(output_path, gray_image)

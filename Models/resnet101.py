@@ -25,7 +25,7 @@ torch.backends.cudnn.benchmark = True
 # Learning and training parameters.
 epochs = 20
 batch_size = 32
-learning_rate = 0.001
+learning_rate = 0.01
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 # Model
